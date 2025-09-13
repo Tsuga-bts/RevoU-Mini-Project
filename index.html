@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Website Saia</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="logo">REVO</div>
+      <nav>
+        <button><a href="#ourprofile">Home</a></button>
+        <button><a href="#Headquarter">Our Profile</a></button>
+        <button><a href="#message">Portofolio</a></button>
+        <button><a href="#message">Message Us</a></button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="ourprofile">
+        <h1>Hi Tsuga, Welcome To Website</h1>
+        <p>Ini adalah website latihan pertama</p>
+      </div>
+    </section>
+
+    <!-- Our Headquarter -->
+    <section class="headquarter" id="Headquarter">
+      <h2>Our Headquarter</h2>
+      <div class="city">
+        <div class="circle"></div>
+        <p>Jakarta</p>
+      </div>
+      <div class="city">
+        <div class="circle"></div>
+        <p>Bandung</p>
+      </div>
+      <div class="city">
+        <div class="circle"></div>
+        <p>Surabaya</p>
+      </div>
+    </section>
+
+    <!-- Message Us -->
+    <section class="message" id="Message">
+      <h2>Message Us</h2>
+      <div class="container">
+        <!-- Form -->
+        <div class="form-box">
+          <form id="messageForm">
+            <label for="nama">Nama :</label>
+            <input type="text" id="nama" required /><br />
+
+            <label for="tgl">Tanggal Lahir :</label>
+            <input type="date" id="tgl" required /><br />
+
+            <label>Jenis Kelamin :</label>
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="Laki-Laki"
+                checked />
+              <label for="male">Laki-Laki</label>
+              <input type="radio" name="gender" id="female" value="Perempuan" />
+              <label for="female">Perempuan</label>
+            </div>
+            <br />
+
+            <label for="pesan">Pesan :</label>
+            <textarea id="pesan" rows="4" required></textarea><br />
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="output-box" id="output">
+          <p><strong>Output akan muncul di sini...</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
